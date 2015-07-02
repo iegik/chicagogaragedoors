@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Partners</title>
+  <style>
+    img.logo {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: 2em;
+    }
+    
+    #barand-list {
+      text-align: center;
+    }
+    
+    #barand-list li {
+      display: inline-block;
+      margin: .5em;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="barand-list"></ul>
+
+  <script>
+    var brands = [
+      {
+        name: 'Chamberlain',
+        url: 'http://www.chamberlain.com/',
+        logo: 'chamberlain-logo.png'
+    },
+      {
+        name: 'LiftMaster',
+        url: 'https://www.liftmaster.com',
+        logo: 'liftmaster-logo.png'
+    },
+      {
+        name: 'Craftsman',
+        url: 'http://www.craftsman.com',
+        logo: 'craftsman-logo.png'
+    },
+      {
+        name: 'Raynor',
+        url: 'http://www.raynor.com',
+        logo: 'raynor-logo.png'
+    },
+      {
+        name: 'Stanley Tools',
+        url: 'http://www.stanleytools.com/',
+        logo: 'stanleytools-logo.png'
+    },
+      {
+        name: 'Genie',
+        url: 'http://www.genielift.com/',
+        logo: 'genie-logo.png'
+    },
+      {
+        name: 'Amarr',
+        url: 'http://www.amarr.com/',
+        logo: 'amarr-logo.png'
+    },
+      {
+        name: 'Clopay',
+        url: 'http://www.clopay.com/',
+        logo: 'clopay-logo.png'
+    },
+      {
+        name: 'Waine Dalton',
+        url: 'http://www.wayne-dalton.com/',
+        logo: 'wayne-dalton-logo.png'
+    },
+  ];
+    var draw_logo = function (brand, li) {
+      var img_logo = document.createElement('img');
+      img_logo.src = brand.logo;
+      img_logo.setAttribute('class', 'logo')
+
+      var a = document.createElement('a');
+      a.href = brand.url;
+      a.appendChild(img_logo)
+
+      li.appendChild(a);
+      return li;
+    }
+
+    var draw_favicon = function (brand, li) {
+      var img_favicon = document.createElement('img');
+      img_favicon.src = "http://google.com/s2/favicons?domain_url=" + encodeURIComponent(brand.url);
+      img_favicon.setAttribute('class', 'favicon')
+
+      var a = document.createElement('a');
+      a.href = brand.url;
+      a.innerText = brand.name;
+      a.appendChild(img_favicon)
+      li.appendChild(a);
+      return li;
+    }
+
+    var barand_list = document.getElementById('barand-list');
+  [].forEach.call(brands, function (brand) {
+
+      var li = document.createElement('li');
+      li = draw_logo(brand, li);
+      //li = draw_favicon(brand, li);
+
+      barand_list.appendChild(li);
+      //      console.log(brand.logo, brand.name, brand.url, brand.favicon);
+    });
+  </script>
+</body>
+
+</html>
