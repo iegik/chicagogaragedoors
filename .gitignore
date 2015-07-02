@@ -38,3 +38,10 @@ node_modules
 # Composer
 composer.lock
 /vendor
+
+# Automatic generated files
+/img/
+/css/
+/js/*.min.*
+/styleguide/
+/htmlmin/

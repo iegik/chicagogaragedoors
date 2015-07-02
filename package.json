@@ -1,43 +1,47 @@
 {
   "name": "bootflat",
   "private": false,
-  "version": "2.0.4",
-  "description": "BOOTFLAT is an open source Flat UI KIT based on Bootstrap 3.3.0 CSS framework. It provides a faster, easier and less repetitive way for web developers to create elegant web apps.",
-  "author": "Flathemes <info@flathemes.com>",
-  "homepage": "http://bootflat.github.com/",
+  "version": "0.1.0",
+  "description": "Emergency Repair Service in Chicago (855) 671-1995 — garage door installation and replacement, springs, tracks, openers etc.",
+  "author": "Arturs Jansons",
+  "email": "arturs@jansons.net",
+  "homepage": "http://garage.rnd.solutions/",
   "keywords": [
-    "mobile",
-    "html5",
-    "css3",
-    "scss",
-    "bootflat",
-    "bootstrap",
-    "flat",
-    "flat ui",
-    "ui"
+    "garage",
+    "door",
+    "installation",
+    "replacement",
+    "spring",
+    "track",
+    "opener"
   ],
   "bugs": {
-    "url": "https://github.com/bootflat/bootflat.github.io/issues"
+    "url": ""
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bootflat/bootflat.github.io.git"
+    "url": ""
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-appcache": "^0.1.8",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-csslint": "^0.3.1",
     "grunt-contrib-cssmin": "~0.9.0",
     "grunt-contrib-htmlmin": "^0.3.0",
     "grunt-contrib-imagemin": "^0.9.2",
     "grunt-contrib-jshint": "^0.10.0",
-    "grunt-contrib-sass": "~0.7.3",
+    "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-csscomb": "^3.0.0",
+    "grunt-gulp": "^0.1.0",
     "grunt-html-validation": "^0.1.18",
     "grunt-sed": "^0.1.1",
+    "grunt-sitemap": "^1.2.1",
+    "gulp": "^3.9.0",
     "load-grunt-tasks": "^1.0.0",
+    "sc5-styleguide": "^0.3.24",
     "time-grunt": "^1.0.0"
   }
 }
