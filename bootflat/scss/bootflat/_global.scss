@@ -9,7 +9,20 @@ $prefix-webkit:               true !global;
 $prefix-moz:                  true !global;
 $prefix-spec:                 true !global;
 
-// color elements
+// Main colors
+//
+// $bluejeans-dark - ...
+// $bluejeans-light - ...
+// $aqua-dark - ...
+// $aqua-light - ...
+// $mint-dark - ...
+// $mint-light - ...
+//
+// markup:
+// <div style="background: {$modifiers};" class="styleguide-color">{$modifiers}</div>
+//
+// Styleguide 1.1
+
 $white:                       #FFF !default;
 $black:                       #000 !default;
 

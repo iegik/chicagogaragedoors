@@ -41,10 +41,10 @@ composer.lock
 /vendor
 
 # Automatic generated files
-/img/
-/css/
-/js/*.min.*
-/js/*.map.*
+img/
+css/
+js/*.min.*
+js/*.map.*
 /styleguide/
 /htmlmin/
 sitemap.*

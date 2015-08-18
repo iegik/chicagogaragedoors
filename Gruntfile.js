@@ -249,12 +249,14 @@ module.exports = function (grunt) {
 		},
 		gulp: {
 			'styleguide-generate': function () {
-				var outputPath = 'styleguide';
+				var outputPath = '/styleguide';
 				return gulp.src(['<%= meta.defaultPath %>/scss/<%= pkg.name %>.scss'])
 					.pipe(styleguide.generate({
 						title: 'My Styleguide',
 						server: true,
-						rootPath: outputPath
+						rootPath: outputPath,
+                        //appRoot: outputPath,
+						overviewPath: 'README.md'
 					}))
 					.pipe(gulp.dest(outputPath));
 			},
