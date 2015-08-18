@@ -33,7 +33,8 @@ validation-status.json
 validation-report.json
 
 # Folders to ignore
-node_modules
+node_modules/
+bower_components/
 
 # Composer
 composer.lock
@@ -43,5 +44,9 @@ composer.lock
 /img/
 /css/
 /js/*.min.*
+/js/*.map.*
 /styleguide/
 /htmlmin/
+sitemap.*
+robots.txt
+manifest.*
